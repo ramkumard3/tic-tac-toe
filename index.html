@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">Two-player board game</p>
+      <h1 id="game-title">Tic Tac Toe</h1>
+      <p class="intro">Take turns choosing an X or O for each square. The first player to complete a row, column, or diagonal wins.</p>
+    </section>
+
+    <form class="game" aria-label="Tic tac toe board">
+      <fieldset class="board">
+        <legend>Choose a mark for each square</legend>
+
+        <div class="cell cell-1">
+          <input type="radio" name="cell-1" id="cell-1-empty" checked>
+          <input type="radio" name="cell-1" id="cell-1-x">
+          <input type="radio" name="cell-1" id="cell-1-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Top left square">
+            <label for="cell-1-x">X</label>
+            <label for="cell-1-o">O</label>
+          </div>
+        </div>
+
+        <div class="cell cell-2">
+          <input type="radio" name="cell-2" id="cell-2-empty" checked>
+          <input type="radio" name="cell-2" id="cell-2-x">
+          <input type="radio" name="cell-2" id="cell-2-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Top center square">
+            <label for="cell-2-x">X</label>
+            <label for="cell-2-o">O</label>
+          </div>
+        </div>
+
+        <div class="cell cell-3">
+          <input type="radio" name="cell-3" id="cell-3-empty" checked>
+          <input type="radio" name="cell-3" id="cell-3-x">
+          <input type="radio" name="cell-3" id="cell-3-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Top right square">
+            <label for="cell-3-x">X</label>
+            <label for="cell-3-o">O</label>
+          </div>
+        </div>
+
+        <div class="cell cell-4">
+          <input type="radio" name="cell-4" id="cell-4-empty" checked>
+          <input type="radio" name="cell-4" id="cell-4-x">
+          <input type="radio" name="cell-4" id="cell-4-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Middle left square">
+            <label for="cell-4-x">X</label>
+            <label for="cell-4-o">O</label>
+          </div>
+        </div>
+
+        <div class="cell cell-5">
+          <input type="radio" name="cell-5" id="cell-5-empty" checked>
+          <input type="radio" name="cell-5" id="cell-5-x">
+          <input type="radio" name="cell-5" id="cell-5-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Center square">
+            <label for="cell-5-x">X</label>
+            <label for="cell-5-o">O</label>
+          </div>
+        </div>
+
+        <div class="cell cell-6">
+          <input type="radio" name="cell-6" id="cell-6-empty" checked>
+          <input type="radio" name="cell-6" id="cell-6-x">
+          <input type="radio" name="cell-6" id="cell-6-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Middle right square">
+            <label for="cell-6-x">X</label>
+            <label for="cell-6-o">O</label>
+          </div>
+        </div>
+
+        <div class="cell cell-7">
+          <input type="radio" name="cell-7" id="cell-7-empty" checked>
+          <input type="radio" name="cell-7" id="cell-7-x">
+          <input type="radio" name="cell-7" id="cell-7-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Bottom left square">
+            <label for="cell-7-x">X</label>
+            <label for="cell-7-o">O</label>
+          </div>
+        </div>
+
+        <div class="cell cell-8">
+          <input type="radio" name="cell-8" id="cell-8-empty" checked>
+          <input type="radio" name="cell-8" id="cell-8-x">
+          <input type="radio" name="cell-8" id="cell-8-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Bottom center square">
+            <label for="cell-8-x">X</label>
+            <label for="cell-8-o">O</label>
+          </div>
+        </div>
+
+        <div class="cell cell-9">
+          <input type="radio" name="cell-9" id="cell-9-empty" checked>
+          <input type="radio" name="cell-9" id="cell-9-x">
+          <input type="radio" name="cell-9" id="cell-9-o">
+          <span class="mark x" aria-hidden="true">X</span>
+          <span class="mark o" aria-hidden="true">O</span>
+          <div class="choice" aria-label="Bottom right square">
+            <label for="cell-9-x">X</label>
+            <label for="cell-9-o">O</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <p class="status status-start">Select marks to play the game.</p>
+      <p class="status status-x">X wins!</p>
+      <p class="status status-o">O wins!</p>
+      <p class="status status-draw">It&rsquo;s a draw!</p>
+
+      <button class="reset" type="reset">Reset board</button>
+    </form>
+  </main>
+</body>
+</html>
